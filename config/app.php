@@ -155,6 +155,8 @@ return [
         Blog\Providers\EventServiceProvider::class,
         Blog\Providers\RouteServiceProvider::class,
 
+        Frozennode\Administrator\AdministratorServiceProvider::class,
+
     ],
 
     /*
