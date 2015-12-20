@@ -23,6 +23,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('user/update/{id}', 'UserController@update');
     Route::get('user/delete/{id}', 'UserController@destroy');
     Route::get('auth/logout','Auth\AuthController@getLogout');
+    Route::get('web/scrapper','WebController@getStart');
+
 });
 
 // Authentication routes...

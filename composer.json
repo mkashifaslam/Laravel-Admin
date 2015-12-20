@@ -9,7 +9,9 @@
         "laravel/framework": "5.1.*",
         "fzaninotto/faker": "~1.5",
         "twbs/bootstrap": "~3.3",
-        "frozennode/administrator": "^5.0"
+        "frozennode/administrator": "^5.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "yangqi/htmldom": "dev-master"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
