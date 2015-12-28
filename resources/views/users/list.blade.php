@@ -5,6 +5,10 @@
 <!-- DataTables -->
     <link rel="stylesheet" href="{{ asset('plugins/datatables/dataTables.bootstrap.css') }}">
 
+    <style>
+      td a { margin-left: 5px;}
+    </style>
+
 @endsection
 
 @section("content")
