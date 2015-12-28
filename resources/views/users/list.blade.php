@@ -64,7 +64,7 @@
 @endsection
 
 @section("footer_script_js")
-<!-- page script -->
+    <!-- page script -->
     <script>
       $(function () {
         $('#users').DataTable({
