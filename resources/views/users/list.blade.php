@@ -40,7 +40,9 @@
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->created_at }}</td>
                 <td>{{ $user->updated_at }}</td>
-                <td><a href="{{ url('/user/show/'.$user->id) }}">View</a> | <a href="{{ url('/user/edit/'.$user->id) }}">Edit</a> | <a href="{{ url('/user/delete/'.$user->id) }}">Delete</a></td>
+                <td><a href="{{ url('/user/show/'.$user->id) }}" title="view"><i class="fa fa-eye fa-2x"></i></a>
+                  <a href="{{ url('/user/edit/'.$user->id) }}" title="edit"><i class="fa fa-pencil-square-o fa-2x"></i></a>
+                  <a href="{{ url('/user/delete/'.$user->id) }}" title="delete"><i class="fa fa-times fa-2x"></i></a></td>
               </tr>
               @endforeach                      
             </tbody>
