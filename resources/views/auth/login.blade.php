@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>AdminLTE 2 | Login</title>
+    <title>{{ config('app.app_name') }} | Login</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.4 -->
@@ -20,29 +20,24 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="{{ asset('dist/js/html5shiv.min.js') }}"></script>
+    <script src="{{ asset('dist/js/respond.min.js') }}"></script>
     <![endif]-->
   </head>
-  <body class="skin-blue">
-    <div class="wrapper">
-
-      <!-- Left side column. contains the logo and sidebar -->
-      
+  <body>
+  <div class="container">
       <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-          <h1>
-            User Login
-          </h1>
-        </section>
-
+    <div class="row">
         <!-- Main content -->
         <section class="content">
-          <div class="row">
             <!-- left column -->
-            <div class="col-md-12">
+          <div class="col-md-6 col-md-offset-3">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+              <h1>
+                User Login
+              </h1>
+            </section>
               <!-- general form elements -->
               <div class="box box-primary">
                 <div class="box-header with-border">
@@ -60,7 +55,7 @@
                       <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                     </div>
-                    
+
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" name="remember"> Remember Me
@@ -74,18 +69,9 @@
                 </form>
               </div><!-- /.box -->
           </div>
-             </div>
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
       </div>
-        
-      <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-          <b>Version</b> 2.2.0
-        </div>
-        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
-      </footer>
-
   <!-- jQuery 2.1.4 -->
     <script src="{{ asset('plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
     <!-- Bootstrap 3.3.4 -->
