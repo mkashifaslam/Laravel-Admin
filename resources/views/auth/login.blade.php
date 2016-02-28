@@ -43,6 +43,17 @@
                 <div class="box-header with-border">
                   <h3 class="box-title">Returning User</h3>
                 </div><!-- /.box-header -->
+
+                @if (count($errors) > 0)
+                  <div class="alert alert-danger">
+                    <ul>
+                      @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                  @endif
+
                 <!-- form start -->
                 <form role="form" method="POST" action="{{ url('/auth/login') }}">
                     {!! csrf_field() !!}

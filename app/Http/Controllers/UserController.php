@@ -20,7 +20,7 @@ class UserController extends Controller
     {
         $users = User::all();
 
-        return view("users.list")->withUsers($users);
+    return view("users.list")->withUsers($users);
     }
 
     /**
