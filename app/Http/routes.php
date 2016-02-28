@@ -12,7 +12,7 @@
 */
 // welcome route
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('users');
 });
 
 // Application routes...

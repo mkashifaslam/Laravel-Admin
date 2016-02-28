@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/Laravel-Admin/public',
+    'url' => 'http://laravel-admin',
 
     /*
     |--------------------------------------------------------------------------
