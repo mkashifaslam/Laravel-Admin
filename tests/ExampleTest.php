@@ -16,4 +16,13 @@ class ExampleTest extends TestCase
         $this->visit('/')
              ->see('Laravel 5');
     }
+
+    public function testViewLink()
+    {
+        $user = factory(Blog\User::class)->create();
+
+        $this->actingAs($user)
+            ->visit('/users')
+            ->see(view('users.list'));
+    }
 }

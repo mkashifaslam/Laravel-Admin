@@ -11,7 +11,8 @@
         "twbs/bootstrap": "~3.3",
         "frozennode/administrator": "^5.0",
         "guzzlehttp/guzzle": "~6.0",
-        "yangqi/htmldom": "dev-master"
+        "yangqi/htmldom": "dev-master",
+        "barryvdh/laravel-debugbar": "^2.2"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
