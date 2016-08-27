@@ -16,11 +16,24 @@
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="{{ asset('dist/css/skins/_all-skins.min.css') }}">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!--[if lt IE 9]>
-      <script src="{{ asset('dist/js/html5shiv.min.js') }}"></script>
-      <script src="{{ asset('dist/js/respond.min.js') }}"></script>
+    <script>
+    (function(){
+      var ef = function(){};
+      window.console = window.console || {log:ef,warn:ef,error:ef,dir:ef};
+    }());
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-sham.js"></script>
     <![endif]-->
   </head>
   <body class="skin-blue sidebar-mini">
@@ -227,11 +240,16 @@
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
-
+    <!-- ReactJS -->
+    <script src="{{ asset('bower_components/react/react.js') }}"></script>
+    <script src="{{ asset('bower_components/react/react-dom.js') }}"></script>
+    <!-- React Bootstrap -->
+    <script src="{{ asset('bower_components/react-bootstrap/react-bootstrap.min.js') }}"></script>
     <!-- jQuery 2.1.4 -->
     <script src="{{ asset('plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
     <!-- Bootstrap 3.3.4 -->
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('dist/js/react-components.js') }}"></script>
 
     @yield("footer_files_js")
 
